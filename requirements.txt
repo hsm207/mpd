@@ -2,3 +2,5 @@ tensorflow
 #tensorflow-gpu
 bert-tensorflow
 tensorflow-hub
+pandas
+scikit-learn
