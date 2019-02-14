@@ -256,13 +256,13 @@ def main(args):
     eval_metrics = metrics.compute_eval_metrics(test_df)
 
     print(f'Overall accuracy:{eval_metrics["overall"]["accuracy"]:>11.4f}')
-    print(f'Overall f11-macro:{eval_metrics["overall"]["f1-macro"]:>10.4f}\n')
+    print(f'Overall f1-macro:{eval_metrics["overall"]["f1-macro"]:>10.4f}\n')
 
     print(f'BM accuracy:{eval_metrics["bm"]["accuracy"]:>16.4f}')
-    print(f'BM f11-macro:{eval_metrics["bm"]["f1-macro"]:>15.4f}\n')
+    print(f'BM f1-macro:{eval_metrics["bm"]["f1-macro"]:>15.4f}\n')
 
     print(f'EN accuracy:{eval_metrics["en"]["accuracy"]:>16.4f}')
-    print(f'EN f11-macro:{eval_metrics["en"]["f1-macro"]:>15.4f}\n')
+    print(f'EN f1-macro:{eval_metrics["en"]["f1-macro"]:>15.4f}\n')
 
     test_df.to_csv(f'{args.output_dir}/eval_results.tsv',
                    sep='\t',
