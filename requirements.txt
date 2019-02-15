@@ -3,4 +3,6 @@ tensorflow
 bert-tensorflow
 tensorflow-hub
 pandas
+numpy
 scikit-learn
+ipykernel
