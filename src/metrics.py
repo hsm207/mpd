@@ -27,3 +27,14 @@ def compute_eval_metrics(df):
     }
 
     return metrics
+
+
+def print_metrics(metrics):
+    print(f'Overall accuracy:{metrics["overall"]["accuracy"]:>11.4f}')
+    print(f'Overall f1-macro:{metrics["overall"]["f1-macro"]:>11.4f}\n')
+
+    print(f'BM accuracy:{metrics["bm"]["accuracy"]:>16.4f}')
+    print(f'BM f1-macro:{metrics["bm"]["f1-macro"]:>16.4f}\n')
+
+    print(f'EN accuracy:{metrics["en"]["accuracy"]:>16.4f}')
+    print(f'EN f1-macro:{metrics["en"]["f1-macro"]:>16.4f}\n')
