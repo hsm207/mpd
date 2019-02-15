@@ -1,5 +1,5 @@
-tensorflow
-#tensorflow-gpu
+#tensorflow
+tensorflow-gpu
 bert-tensorflow
 tensorflow-hub
 pandas
